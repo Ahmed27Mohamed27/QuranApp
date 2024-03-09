@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@color/white"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/le"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            app:lottie_rawRes="@raw/ramadan"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            app:lottie_rawRes="@raw/ramadan"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/le"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/welcome" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/anim1"
+        app:lottie_rawRes="@raw/loading"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+</RelativeLayout>
